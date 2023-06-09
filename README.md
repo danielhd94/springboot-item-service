@@ -1,52 +1,50 @@
 # Spring boot item service
 
-El servicio de items es un servicio web que se encarga de generar detalle para un carrito de compra, consumiendo el microservicio de productos para obtener la información de los productos relacionados.
+The item service is a web service that generates details for a shopping cart, consuming the product microservice to obtain related product information.
 
-## Características
+## Features
 
-- Obtiene la información de los productos relacionados llamando al microservicio de productos.
-- Permite obtener información detallada de un item específico, incluyendo los detalles del producto asociado.
+- Retrieves related product information by calling the product microservice.
+- Allows to retrieve detailed information about a specific item, including the details of the associated product.
 
-## Tecnologías utilizadas
+## Technologies Used
 
-- Java: Lenguaje de programación principal.
-- Spring Boot: Framework para el desarrollo de aplicaciones Java.
-- Spring Cloud: Conjunto de herramientas para crear arquitecturas de microservicios.
-- Feign: Biblioteca para consumir servicios web RESTful.
-- H2 Database: Base de datos en memoria utilizada para desarrollo y pruebas.
+- Java: Main programming language.
+- Spring Boot: Framework for Java application development.
+- Spring Cloud: Set of tools for creating microservice architectures.
+- Feign: Library for consuming RESTful web services.
+- H2 Database: In-memory database used for development and testing.
 
-## Configuración
+## Configuration
 
-1. Clona este repositorio: `git clone https://github.com/danielhd94/springboot-item-service.git`
-2. Navega al directorio del proyecto: `cd springboot-item-service`
-3. Abre el proyecto en tu IDE preferido (como Spring Tools Suite).
-4. Ejecuta la aplicación. Se creará automáticamente la base de datos H2 en memoria.
-
-## Endpoints
+1. Clone this repository: `git clone https://github.com/danielhd94/springboot-item-service.git`
+2. Navigate to the project directory: `cd springboot-item-service`
+3. Open the project in your preferred IDE (such as Spring Tools Suite).
+4. Run the application. The H2 in-memory database will be automatically created.
 
 ## Endpoints
 
-A continuación se presentan los endpoints disponibles en el servicio de items:
+The following endpoints are available in the item service:
 
-- `GET /list`: Obtiene una lista de todos los items, incluyendo los detalles de los productos asociados.
-- `GET /detail/{id}`: Obtiene información detallada de un item específico, incluyendo los detalles del producto asociado.
+- `GET /list`: Retrieves a list of all items, including the details of the associated products.
+- `GET /detail/{id}`: Retrieves detailed information about a specific item, including the details of the associated product.
 
-## Consumo del microservicio de productos
+## Consuming the product microservice
 
-El servicio de items consume el microservicio de productos para obtener la información de los productos relacionados. Asegúrate de que el microservicio de productos esté en ejecución y configurado correctamente.
+The item service consumes the product microservice to obtain related product information. Make sure that the product microservice is up and running and configured correctly.
 
-## Contribuciones
+## Contributions
 
-Las contribuciones son bienvenidas. Si deseas mejorar este servicio de items, puedes realizar un fork del repositorio, hacer tus cambios y enviar un pull request.
+Contributions are welcome. If you want to improve this item service, you can fork the repository, make your changes, and submit a pull request.
 
-## Autor
+## Author
 
 Daniel Hernandez
 
-## Licencia
+## License
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para obtener más información.
+This project is licensed under the MIT License. See the LICENSE file for more information.
 
-## Contacto
+## Contact
 
-Si tienes alguna pregunta o sugerencia sobre el servicio de items, puedes contactarme en danielhd94@hotmail.com.
+If you have any questions or suggestions regarding the item service, you can contact me at danielhd94@hotmail.com.
